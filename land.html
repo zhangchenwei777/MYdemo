@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/land.css"/>
+</head>
+<body>
+<video src="res/birds.mp4" width="100%"  autoplay loop muted></video>
+  <div class="top">
+    <div class="container">
+      <p class="rf">
+        <a href="#" class="denglu">登录</a>
+				<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a href="#" class="zhuce">注册</a>
+      </p>
+      <a href="index.html">
+        <img src="Images/logo-header.png">
+      </a>
+    </div>
+  </div>
+  <!--登录-->
+  <div class="from_all" id="from_dlu">
+    <div class="container_two">
+      <h2 class="way">
+        <a href="#" id="id_land">普通登录</a>
+        <span>|</span>
+        <a href="#" id="phone_land">手机登录</a>
+      </h2>
+      <!--普通登录-->
+      <div class="form_id">
+        <form id="login-form">
+          <div class="form_group">
+            <label for="uname" class="disnone">用户名：</label>
+            <input type="text" name="uname" id="uname" placeholder="请输入用户名" autofocus maxlength="9" minlength="6" required/>
+          </div>
+          <div class="form_group">
+            <label for="upwd" class="disnone">密码：</label>
+            <input type="password" name="upwd" id="upwd" placeholder="请输入密码" maxlength="12" minlength="6" required/>
+          </div>
+          <div class="form_group">
+            <label for="uyzm" class="disnone">验证码：</label>
+            <input type="text" class="uyzm" name="uyzm" id="uyzm" placeholder="请输入验证码" required/>
+            <canvas id="vcode" width="100" height="30"></canvas>
+          </div>
+          <div class="form_group">
+            <!--注意此处复选框/单选框的写法-->
+            <div class="checkbox">
+              <label for="agree">
+                <input type="checkbox" name="agree" id="agree" class="checkbox"><span class="hold_pwd">记住登录状态</span>
+              </label>
+              <div class="two_code rf">
+                <a href="#" class="checkbox_a" >忘记密码？&nbsp;&nbsp;</a>
+                <b><i></i></b>
+              </div>
+            </div>
+          </div>
+          <div class="form_group">
+            <input class="btn" id="login" type="button" value="登录"/>
+          </div>
+        </form>
+      </div>
+      <!--手机登录-->
+      <div class="form_phone disnone">
+        <form action="">
+          <div class="form_group">
+            <label for="uphone" class="disnone">手机号：</label>
+            <input type="tel" name="uphone" id="uphone" placeholder="请输入您的手机号" autofocus maxlength="11" minlength="11" required/>
+            <br/>
+          </div>
+          <div class="form_group">
+            <label for="uzzm" class="disnone">验证码：</label>
+            <input type="password" name="uzzm" id="uzzm" class="p_uzzm" placeholder="请输入验证码" maxlength="12" minlength="6"/>
+            <input type="button" id="btn_yzm" class="p_uzzm" value="点击发送验证码"/>
+          </div>
+          <div class="form_group">
+            <input class="btn" type="button" value="登录"/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--注册-->
+  <div class="from_all disnone" id="from_zce">
+
+    <div class="container_two">
+      <h1 class="user_zce">用户注册中心</h1>
+    </div>
+    <div class="panel">
+      <form action="land.php" id="zc-form">
+        <div class="form_group">
+          <label for="dl_uname">用户名：</label>
+          <input type="text" name="uname" id="dl_uname" placeholder="请输入用户名" autofocus maxlength="9" minlength="6" required/>
+          <span class="msg-default">用户名长度在6到9位之间</span>
+        </div>
+        <div class="form_group">
+          <label for="dl_upwd">密码：</label>
+          <input type="password" name="upwd" id="dl_upwd" placeholder="请输入密码" maxlength="12" minlength="6" required/>
+          <span class="msg-default hidden">用户密码长度在6到12位之间</span>
+        </div>
+        <div class="form_group">
+          <label for="dl_tpwd">确认密码：</label>
+          <input type="password" name="password" id="dl_tpwd" placeholder="请再次输入密码" maxlength="12" minlength="6" required/>
+          <span class="msg-default hidden">用户密码长度在6到12位之间</span>
+        </div>
+        <div class="form_group">
+          <label for="umail">电子邮件：</label>
+          <input type="email" name="email" id="umail" placeholder="请输入邮箱地址" required />
+          <span class="msg-default hidden">请输入合法的邮箱地址</span>
+        </div>
+        <div class="form_group">
+          <label for="uphone">手机号：</label>
+          <input type="text" name="uphone" id="phone" placeholder="请输入您的手机号"  maxlength="11" minlength="11" required/>
+          <span class="msg-default hidden">手机号不能为空</span>
+        </div>
+        <div class="form_group">
+          <label for="age">年龄：</label>
+          <input type="number" name="age" id="age" placeholder="请输入年龄" max="60" min="18" required/>
+          <span class="msg-default hidden"></span>
+        </div>
+        <div class="form_group">
+          <label for="birthday">出生日期：</label>
+          <input type="date" name="birthday" id="birthday" required>
+          <span class="msg-default hidden"></span>
+        </div>
+        <div class="form_group">
+          <input id="submit" type="button" value="注册" />
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer-layer1">
+        <div class="footer-innerLink lf">
+          <a href="">关于魅族</a>
+          <span></span>
+          <a href="">工作机会</a>
+          <span></span>
+          <a href="">联系我们</a>
+          <span></span>
+          <a href="">法律声明</a>
+          <span></span>
+          <a href="">常见问题</a>
+          <span></span>
+          <a href="">简体中文</a>
+        </div>
+        <div class="footer-service rf">
+          <span>客服热线</span>
+          <span>400-788-3333</span>
+          <a href="">在线客服</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/land.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/product.css"/>
+  <link rel="stylesheet" href="css/header_footer.css"/>
+</head>
+<body>
+  <div class="header" id="header">
+    <script src="js/header.js"></script>
+  </div>
+
+  <div class="main">
+    <div class="container">
+
+      <div class="bread-crumb">
+        <p><a href="mz.html">首页</a> > <span class="Pro">PRO6s</span></p>
+      </div>
+
+      <!--产品简介-->
+      <div class="product_intro">
+        <div id="preview">
+          <div class="mediumDiv">
+            <img class="mImg" src="Images/phone1l.jpg"/>
+            <!-- <div id="mask"></div>
+            <div id="superMask"></div> -->
+          </div>
+          <div id="largeDiv"></div>
+          <h1>
+            <a class="backward_disabled"></a>
+            <a class="forward"></a>
+            <div class="icon_list_box">
+            	<ul id="icon_list">
+              		<li><img src="Images/phone1.jpg"/></li>
+              		<li><img src="Images/phone2.jpg"/></li>
+             		<li><img src="Images/phone3.jpg"/></li>
+              		<li><img src="Images/phone4.jpg"/></li>
+              		<li><img src="Images/phone5.jpg"/></li>
+              		<li><img src="Images/phone6.jpg"/></li>
+           		 </ul>
+            </div>
+            
+          </h1>
+          <div class="collection">
+          	<p>
+          		<a href="#">收藏</a>
+          		<a href="#">对比+</a>
+          	</p>
+          </div>
+        </div>
+        <h1>PRO 6s</h1>
+        <p class="first_fa">11月7日，限量首发</p>
+        <h2 class="price"><p class="type">价格：</p>¥ 2699.00</h2>
+        <ul class="xiangqing">
+          <li>
+            <p class="type">网络类型：</p>
+            <a class="aBtn" onclick="change()">全网通公开版</a>
+          </li>
+          <li>
+            <p class="type">颜色分类：</p>
+            <a class="aBtn colorFenlei" onclick="change()"><i class="phoneColor"></i>星空黑</a>
+          </li>
+          <li>
+            <p class="type">内存容量：</p>
+            <a class="aBtn" onclick="change()">64GB</a>
+          </li>
+          <li>
+            <p class="type">套餐：</p>
+            <a class="aBtn" onclick="change()">官方标配&nbsp;&nbsp;<span class="discount">无优惠</span></a>
+          </li>
+          <li>
+            <hr/>
+          </li>
+          <li>
+            <p class="type">支持：</p>
+            <span><i class="yes"></i>顺丰包邮&nbsp;&nbsp;&nbsp;&nbsp;<i class="yes"></i>7天无理由退货</span>
+          </li>
+          <li>
+            <p class="type">服务：</p>
+            <span>本商品由 魅族 负责发货并提供售后服务</span>
+          </li>
+          <li>
+            <hr/>
+          </li>
+          <li>
+            <p class="type">数量:</p>
+            <p>
+              <button id="sub">-</button>
+              <input type="text" class="buyNum" value="1"/>
+              <button id="add">+</button>
+              <a href="#" class="buy">立即购买</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="product_all">
+
+        <h2 class="product_tit">
+          <a href="#product_img" class="mous">产品详情</a>
+          <a href="#product_parameter">规格参数</a>
+          <a href="#product_question">常见问题</a>
+        </h2>
+
+        <div class="product_img active" id="product_img">
+          <img src="images/1.jpg"/>
+          <img src="images/2.jpg"/>
+          <img src="images/3.jpg"/>
+          <img src="images/4.jpg"/>
+          <img src="images/5.jpg"/>
+          <img src="images/6.jpg"/>
+          <img src="images/7.jpg"/>
+          <img src="images/8.jpg"/>
+          <img src="images/9.jpg"/>
+          <img src="images/10.jpg"/>
+          <img src="images/11.jpg"/>
+          <img src="images/12.jpg"/>
+          <img src="images/13.jpg"/>
+          <img src="images/14.jpg"/>
+          <img src="images/15.jpg"/>
+        </div>
+
+        <div class="product_parameter" id="product_parameter">
+          <table class="phone_parameter">
+            <tr>
+              <td colspan="2" class="t_header">基础信息</td>
+            </tr>
+            <tr>
+              <td>品牌</td><td>魅族</td>
+            </tr>
+            <tr>
+              <td>型号</td><td>PRO 6s</td>
+            </tr>
+            <tr>
+              <td>尺寸</td><td>147.7*70.8*7.3mm</td>
+            </tr>
+            <tr>
+              <td>电池容量</td><td>3060mAh</td>
+            </tr>
+            <tr>
+              <td>重量</td><td>163g</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="t_header">屏幕</td>
+            </tr>
+            <tr>
+              <td>屏幕尺寸</td><td>5.2英寸</td>
+            </tr>
+            <tr>
+              <td>对比度</td><td>	10000：1</td>
+            </tr>
+            <tr>
+              <td>分辨率</td><td>	1920×1080</td>
+            </tr>
+            <tr>
+              <td>PPI</td><td>423.6</td>
+            </tr>
+            <tr>
+              <td>亮度</td><td>350cd/m²（典型值）</td>
+            </tr>
+            <tr>
+              <td>显示技术</td><td>	Super AMOLED</td>
+            </tr>
+            <tr>
+              <td>制造工艺</td><td>On-cell</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="t_header">容量</td>
+            </tr>
+            <tr>
+              <td>运行内存（RAM）</td><td>4GB</td>
+            </tr>
+            <tr>
+              <td>机身内存</td><td>64GB</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="t_header">处理器</td>
+            </tr>
+            <tr>
+              <td>CPU</td><td>	Helio X25 处理器</td>
+            </tr>
+            <tr>
+              <td>GPU</td><td>	ARM Mali-T880 图形处理器</td>
+            </tr>
+            <tr>
+              <td>CPU频率</td>
+              <td>
+                <p>ARM® Cortex®-A53™ 1.4GHz x4 +</p>
+                <p>ARM® Cortex®-A53™ 2.0GHz x4 +</p>
+                <p>ARM® Cortex®-A72™ 2.5GHz x2</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="t_header">摄像</td>
+            </tr>
+            <tr>
+              <td>前置摄像头</td>
+              <td>
+                <p>500万像素</p>
+                <p>ƒ/2.0 光圈</p>
+                <p>5 片式镜头</p>
+                <p>Face AE 面部曝光增强</p>
+                <p>智能美颜算法 自适应美肤</p>
+              </td>
+            </tr>
+            <tr>
+              <td>后置摄像头</td>
+              <td>
+                <p>1200万像素</p>
+                <p>连拍模式</p>
+                <p>全景模式</p>
+                <p>四轴光学防抖 出片清晰稳定</p>
+                <p>6片式镜头 好画质 强解析</p>
+                <p>PDAF 相位对焦 急速抓拍</p>
+                <p>激光辅助对焦 暗广拍照更准确</p>
+                <p>环形双色温闪光灯 补光自然均匀</p>
+                <p>ƒ/2.0 光圈 大光圈 大虚化</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="t_header">mTouch</td>
+            </tr>
+            <tr>
+              <td>响应速度</td><td>	0.2s</td>
+            </tr>
+            <tr>
+              <td>识别角度</td><td>360°</td>
+            </tr>
+            <tr>
+              <td>指纹组数</td><td>5组</td>
+            </tr>
+            <tr>
+              <td>mTouch版本</td><td>	2.1</td>
+            </tr>
+            <tr>
+              <td>mTouch传感器</td><td>电容式触摸传感器</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="t_header">运营商与制式</td>
+            </tr>
+            <tr>
+              <td>全网通</td>
+              <td>
+                <p>移动 4G TD-LTE</p>
+                <p>联通/电信 4G TD/FDD-LTE</p>
+                <p>移动 3G TD-SCDMA</p>
+                <p>联通 3G WCDMA</p>
+                <p>电信 3G EVDO</p>
+                <p>移动/联通 2G GSM</p>
+                <p>电信 2G CDMA</p>
+                <p>全网通（公开版）</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="t_header">其他参数</td>
+            </tr>
+            <tr>
+              <td>WLAN功能</td>
+              <td>
+                <p>802.11a/b/g/n/ac 无线网络</p>
+                <p>支持 5GHz 和 2.4GHz 频段</p>
+              </td>
+            </tr>
+            <tr>
+              <td>蓝牙</td>
+              <td>
+                <p>	Bluetooth 4.1</p>
+                <p>支持 BLE</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="t_header">包装清单</td>
+            </tr>
+            <tr>
+              <td>包装清单</td>
+              <td>
+                <p>主机 x 1</p>
+                <p>电源适配器 x 1</p>
+                <p>保修证书 x 1</p>
+                <p>SIM卡顶针 x 1</p>
+                <p>数据线 x 1</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="product_question" id="product_question">
+          <h2>热门回答</h2>
+          <dl class="qu_an">
+            <dt class="question"><i></i>PRO 6s 的屏幕尺寸是多大？有哪几种颜色？机身材质？</dt>
+            <dd class="answer"><i></i>5.2 英寸，星空黑、月光银、香槟金、玫瑰金，金属一体化机身。</dd>
+          </dl>
+          <dl class="qu_an">
+            <dt class="question"><i></i>PRO 6s 是否支持指纹识别？</dt>
+            <dd class="answer"><i></i>支持 mTouch 2.1，响应速度达 0.2s，支持移动指纹支付功能 。</dd>
+          </dl>
+          <dl class="qu_an">
+            <dt class="question"><i></i>PRO 6s 是否支持 Hi-Fi 功能？</dt>
+            <dd class="answer"><i></i>PRO 6s 采用了 Cirrus Logic 的解码耳放一体芯片，支持 Hi-Fi 音质播放。</dd>
+          </dl>
+          <dl class="qu_an">
+            <dt class="question"><i></i>PRO 6s 的 mSound 是什么功能？</dt>
+            <dd class="answer"><i></i>PRO 6s 搭载了 NXP 第三代 Smart PA 系统。先进的芯片通过实时感知外放喇叭的状态，可以智能控制喇叭的震动；从而充分榨取喇叭的性能，大大提高了声音整体的响度和低频的质量，洪亮不破音，澎湃而清晰，使外放达到准 Hi-Fi 水平，我们称之为 mSound。</dd>
+          </dl>
+          <dl class="qu_an">
+            <dt class="question"><i></i>PRO 6s 支持的网络有哪些？是否具备 VoLTE 语音通话技术？</dt>
+            <dd class="answer"><i></i>PRO 6s 全网通版可支持中国移动、中国联通、中国电信，一张卡 4G 极速上网，另一张卡 2G 语音畅聊，不可同时支持两张电信卡。支持 VoLTE 高清通话。</dd>
+          </dl>
+          <dl class="qu_an">
+            <dt class="question"><i></i>PRO 6s 的 CPU 是用什么？</dt>
+            <dd class="answer"><i></i>PRO 6s 采用了 Cirrus Logic 的解码耳放一体芯片，支持 Hi-Fi 音质播放。</dd>
+          </dl>
+          <dl class="qu_an">
+            <dt class="question"><i></i>PRO 6s 的 mSound 是什么功能？</dt>
+            <dd class="answer"><i></i>全新 Helio X25 旗舰处理器，魅族革命性的 10 核 3 集群架构，最高主频达到了 2.5GHz。</dd>
+          </dl>
+          <dl class="qu_an">
+            <dt class="question"><i></i>PRO 6s 的运行内存是多少？</dt>
+            <dd class="answer"><i></i>全系标配 4G 高速运行内存。</dd>
+          </dl>
+          <dl class="qu_an">
+            <dt class="question"><i></i>PRO 6s 后置摄像头是多少像素？采用哪颗 CMOS？是否支持光学防抖？</dt>
+            <dd class="answer"><i></i>1200 万像素，索尼 IMX386，搭载 PDAF 高速相位对焦，ƒ/2.0 大光圈虚化，支持图像及视频四轴光学防抖。</dd>
+          </dl>
+          <dl class="qu_an">
+            <dt class="question"><i></i>PRO 6s 的电池规格？是否支持 mCharge 安全快充？是否 Type-C 接口和支持 USB 3.1 标准？</dt>
+            <dd class="answer"><i></i>3060 mAh 典型值，支持mCharge 安全快充。配备了Type-C接口并整合加入 USB 3.1 Gen1 标准。</dd>
+          </dl>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" id="footer">
+    <script src="js/footer.js"></script>
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/product.js"></script>
+  <script src="js/index_header.js"></script>
+</body>
+</html>
